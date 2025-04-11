@@ -10,10 +10,10 @@ import xacro
 def generate_launch_description():
     # Package name and robot name
     namePackage = 'robot'
-    robotXacroName = 'abn_robot'
+    robotXacroName = 'robot'
 
     # File paths
-    pathModelFile = os.path.join(get_package_share_directory(namePackage), 'urdf', 'abn_robot.urdf.xacro')
+    pathModelFile = os.path.join(get_package_share_directory(namePackage), 'urdf', 'robot.xacro')
 
     # Process xacro to URDF string
     robotDescription = xacro.process_file(pathModelFile).toxml()
@@ -35,7 +35,9 @@ def generate_launch_description():
     # Spawn the robot using the robot_description parameter
     spawnModelNode = Node(
         package='gazebo_ros', executable='spawn_entity.py',
-        arguments=['-topic', 'robot_description', '-entity', robotXacroName],
+        arguments=['-file', os.path.join(get_package_share_directory(namePackage), 'urdf', 'robot.xacro'),
+           '-entity', robotXacroName],
+
         output='screen'
     )
 
