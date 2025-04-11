@@ -1,0 +1,16 @@
+<robot name="simple_mesh_robot">
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://robot/meshes/Untitled.stl" scale="1 1 1"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="gray">
+        <color rgba="0.7 0.7 0.7 1"/>
+      </material>
+    </visual>
+  </link>
+
+</robot>
+

@@ -1,0 +1,10 @@
+    {
+    "documentId": "93d833b35cf8dbd601affa94",
+    "workspaceId": "1c3d9ff66d61a7447d2f901a2",
+    "elementId": "270cca1c89a8b47cc2442791",
+
+    "assemblyName": "ABN",
+    "robotName": "robot",
+    "packageName": "robotic/meshes",
+    "outputFormat": "urdf"
+    }

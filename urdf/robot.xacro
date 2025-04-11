@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="humanoid_robot">
+
+  <xacro:property name="mesh_dir" value="package://robot/meshes"/>
+
+  <!-- Base -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+         <box size="0.2 0.2 0.2"/>
+      </geometry>
+
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="base_color">
+        <color rgba="0.7 0.7 0.7 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="${mesh_dir}/base.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
+               iyy="0.01" iyz="0.0"
+               izz="0.01"/>
+    </inertial>
+  </link>
+
+  <!-- Hip -->
+  <link name="hip_link">
+    <visual>
+      <geometry>
+        <mesh filename="${mesh_dir}/hip.stl" scale="1 1 1"/>
+      </geometry>
+      <material name="hip_color">
+        <color rgba="0.5 0.8 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="${mesh_dir}/hip.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
+               iyy="0.01" iyz="0.0"
+               izz="0.01"/>
+    </inertial>
+  </link>
+  <joint name="base_to_hip" type="fixed">
+    <parent link="base_link"/>
+    <child link="hip_link"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Left Leg -->
+  <link name="thigh_link">
+    <visual>
+      <geometry>
+        <mesh filename="${mesh_dir}/thigh.stl" scale="1 1 1"/>
+      </geometry>
+      <material name="thigh_color">
+        <color rgba="0.8 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="${mesh_dir}/thigh.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
+               iyy="0.01" iyz="0.0"
+               izz="0.01"/>
+    </inertial>
+  </link>
+  <joint name="hip_to_thigh" type="fixed">
+    <parent link="hip_link"/>
+    <child link="thigh_link"/>
+    <origin xyz="0.1 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="calf_link">
+    <visual>
+      <geometry>
+        <mesh filename="${mesh_dir}/calf.stl" scale="1 1 1"/>
+      </geometry>
+      <material name="calf_color">
+        <color rgba="0.5 0.5 0.8 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="${mesh_dir}/calf.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
+               iyy="0.01" iyz="0.0"
+               izz="0.01"/>
+    </inertial>
+  </link>
+  <joint name="thigh_to_calf" type="fixed">
+    <parent link="thigh_link"/>
+    <child link="calf_link"/>
+    <origin xyz="0 -0.2 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="foot_link">
+    <visual>
+      <geometry>
+        <mesh filename="${mesh_dir}/foot.stl" scale="1 1 1"/>
+      </geometry>
+      <material name="foot_color">
+        <color rgba="0.5 0.7 0.9 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="${mesh_dir}/foot.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
+               iyy="0.01" iyz="0.0"
+               izz="0.01"/>
+    </inertial>
+  </link>
+  <joint name="calf_to_foot" type="fixed">
+    <parent link="calf_link"/>
+    <child link="foot_link"/>
+    <origin xyz="0 -0.15 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Right Leg -->
+  <link name="thigh_r_link">
+    <visual>
+      <geometry>
+        <mesh filename="${mesh_dir}/thigh_r.stl" scale="1 1 1"/>
+      </geometry>
+      <material name="thigh_r_color">
+        <color rgba="0.8 0.8 0.4 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="${mesh_dir}/thigh_r.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
+               iyy="0.01" iyz="0.0"
+               izz="0.01"/>
+    </inertial>
+  </link>
+  <joint name="hip_to_thigh_r" type="fixed">
+    <parent link="hip_link"/>
+    <child link="thigh_r_link"/>
+    <origin xyz="-0.1 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="calf_r_link">
+    <visual>
+      <geometry>
+        <mesh filename="${mesh_dir}/calf_r.stl" scale="1 1 1"/>
+      </geometry>
+      <material name="calf_r_color">
+        <color rgba="0.3 0.3 0.9 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="${mesh_dir}/calf_r.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
+               iyy="0.01" iyz="0.0"
+               izz="0.01"/>
+    </inertial>
+  </link>
+  <joint name="thigh_r_to_calf_r" type="fixed">
+    <parent link="thigh_r_link"/>
+    <child link="calf_r_link"/>
+    <origin xyz="0 -0.2 0" rpy="0 0 0"/>
+  </joint>
+
+</robot>
+
