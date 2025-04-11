@@ -1,0 +1,4 @@
+extensions:
+  colcon_core.package_identification.python_setup_py: false
+  colcon_core.package_augmentation.python_setup_py: false
+  colcon_core.package_augmentation.ros_ament_python: false

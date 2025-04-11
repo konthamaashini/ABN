@@ -1,0 +1,6 @@
+Invoking command in '/home/aashini/ABN/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/aashini/ABN/src/robot -DCMAKE_INSTALL_PREFIX=/home/aashini/ABN/install/robot
+Invoked command in '/home/aashini/ABN/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/aashini/ABN/src/robot -DCMAKE_INSTALL_PREFIX=/home/aashini/ABN/install/robot
+Invoking command in '/home/aashini/ABN/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/aashini/ABN/build/robot -- -j16 -l16
+Invoked command in '/home/aashini/ABN/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/aashini/ABN/build/robot -- -j16 -l16
+Invoking command in '/home/aashini/ABN/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/aashini/ABN/build/robot
+Invoked command in '/home/aashini/ABN/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/aashini/ABN/build/robot

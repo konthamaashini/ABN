@@ -1,0 +1,252 @@
+[0.160s] Invoking command in '/home/aashini/ABN/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/aashini/ABN/src/robot -DCMAKE_INSTALL_PREFIX=/home/aashini/ABN/install/robot
+[0.847s] -- The C compiler identification is GNU 9.4.0
+[1.425s] -- The CXX compiler identification is GNU 9.4.0
+[1.856s] -- Check for working C compiler: /usr/bin/cc
+[2.282s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.291s] -- Detecting C compiler ABI info
+[2.526s] -- Detecting C compiler ABI info - done
+[2.544s] -- Detecting C compile features
+[2.546s] -- Detecting C compile features - done
+[2.551s] -- Check for working CXX compiler: /usr/bin/c++
+[2.771s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.772s] -- Detecting CXX compiler ABI info
+[3.007s] -- Detecting CXX compiler ABI info - done
+[3.015s] -- Detecting CXX compile features
+[3.016s] -- Detecting CXX compile features - done
+[3.041s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.070s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.070s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.249s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[3.253s] -- Found xacro: 2.0.7 (/opt/ros/foxy/share/xacro/cmake)
+[3.257s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.355s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.416s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.420s] -- Added test 'lint_cmake' to check CMake code style
+[3.423s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[3.433s] -- Added test 'xmllint' to check XML markup files
+[3.437s] -- Configuring done
+[3.438s] -- Generating done
+[3.439s] -- Build files have been written to: /home/aashini/ABN/build/robot
+[3.445s] Invoked command in '/home/aashini/ABN/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/aashini/ABN/src/robot -DCMAKE_INSTALL_PREFIX=/home/aashini/ABN/install/robot
+[3.446s] Invoking command in '/home/aashini/ABN/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/aashini/ABN/build/robot -- -j16 -l16
+[3.484s] Invoked command in '/home/aashini/ABN/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/aashini/ABN/build/robot -- -j16 -l16
+[3.499s] Invoking command in '/home/aashini/ABN/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/aashini/ABN/build/robot
+[3.506s] -- Install configuration: ""
+[3.506s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch
+[3.507s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/display.launch.py
+[3.507s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/install
+[3.508s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/install/local_setup.bash
+[3.508s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/install/local_setup.zsh
+[3.509s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/install/setup.sh
+[3.510s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/install/setup.zsh
+[3.510s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/install/COLCON_IGNORE
+[3.510s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/install/setup.ps1
+[3.511s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/install/local_setup.sh
+[3.511s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/install/_local_setup_util_ps1.py
+[3.512s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/install/_local_setup_util_sh.py
+[3.513s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/install/local_setup.ps1
+[3.514s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/install/.colcon_install_layout
+[3.515s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/install/setup.bash
+[3.516s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/gazebo_spawn.launch.py
+[3.517s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/gazebo_launch.py
+[3.518s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/build
+[3.518s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/build/COLCON_IGNORE
+[3.518s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/build/.built_by
+[3.518s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/log
+[3.519s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/log/COLCON_IGNORE
+[3.519s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/log/latest_build
+[3.519s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/log/build_2025-04-09_22-18-20
+[3.520s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/log/build_2025-04-09_22-18-20/logger_all.log
+[3.520s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/log/build_2025-04-09_22-18-20/events.log
+[3.521s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/log/latest
+[3.521s] -- Installing: /home/aashini/ABN/install/robot/share/robot/launch/robot_visualization.py
+[3.522s] -- Installing: /home/aashini/ABN/install/robot/share/robot/urdf
+[3.523s] -- Installing: /home/aashini/ABN/install/robot/share/robot/urdf/robot.xacro
+[3.523s] -- Installing: /home/aashini/ABN/install/robot/share/robot/urdf/base_robot.xacro
+[3.523s] -- Installing: /home/aashini/ABN/install/robot/share/robot/urdf/abn_robot.urdf.xacro
+[3.525s] -- Installing: /home/aashini/ABN/install/robot/share/robot/urdf/robot.sdf
+[3.526s] -- Installing: /home/aashini/ABN/install/robot/share/robot/urdf/robot.urdf
+[3.527s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh
+[3.527s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/hip.stl
+[3.530s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets
+[3.530s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_19.part
+[3.531s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6__2.part:Zone.Identifier
+[3.531s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_15.stl:Zone.Identifier
+[3.531s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8.stl
+[3.531s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__4.part
+[3.532s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3.part
+[3.532s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__4.stl:Zone.Identifier
+[3.533s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__3.stl
+[3.533s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6.part:Zone.Identifier
+[3.533s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__2.stl:Zone.Identifier
+[3.534s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_12.part:Zone.Identifier
+[3.534s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6.part
+[3.534s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__4.part:Zone.Identifier
+[3.534s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10__2.part:Zone.Identifier
+[3.534s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__3.stl:Zone.Identifier
+[3.534s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__4.part
+[3.535s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__2.stl
+[3.535s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__3.part
+[3.536s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__2.part:Zone.Identifier
+[3.536s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__4.stl
+[3.536s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1.stl
+[3.537s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5.part:Zone.Identifier
+[3.537s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_17.stl:Zone.Identifier
+[3.537s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8.part:Zone.Identifier
+[3.537s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_15.part:Zone.Identifier
+[3.537s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6__2.part
+[3.538s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_11.part:Zone.Identifier
+[3.538s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_20.part:Zone.Identifier
+[3.538s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9__2.part:Zone.Identifier
+[3.538s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7.stl:Zone.Identifier
+[3.538s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7.part
+[3.539s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__4.stl
+[3.539s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_11.stl:Zone.Identifier
+[3.539s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10.part
+[3.540s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_19.stl:Zone.Identifier
+[3.540s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__2.stl:Zone.Identifier
+[3.540s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9.part
+[3.540s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5.part
+[3.541s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10__2.stl
+[3.541s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5__2.stl
+[3.542s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9.stl:Zone.Identifier
+[3.542s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8.stl:Zone.Identifier
+[3.543s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7.stl
+[3.543s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3.part:Zone.Identifier
+[3.544s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__2.stl:Zone.Identifier
+[3.544s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5__2.part
+[3.544s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_13.part
+[3.545s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__4.stl:Zone.Identifier
+[3.545s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__4.part:Zone.Identifier
+[3.545s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8__2.part
+[3.545s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__2.stl:Zone.Identifier
+[3.545s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3.stl:Zone.Identifier
+[3.545s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2.part:Zone.Identifier
+[3.546s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_13.part:Zone.Identifier
+[3.546s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_17.part
+[3.546s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_12.stl:Zone.Identifier
+[3.546s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6.stl
+[3.546s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9.part:Zone.Identifier
+[3.547s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4.stl
+[3.547s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10.stl
+[3.547s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_20.stl
+[3.548s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__3.part
+[3.548s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6__2.stl
+[3.549s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7.part:Zone.Identifier
+[3.549s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9.stl
+[3.550s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9__2.stl:Zone.Identifier
+[3.550s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__3.part:Zone.Identifier
+[3.550s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4.part
+[3.550s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1.part
+[3.551s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_18.stl
+[3.551s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_13.stl:Zone.Identifier
+[3.551s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7__2.part
+[3.552s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__2.part:Zone.Identifier
+[3.552s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1.stl:Zone.Identifier
+[3.552s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__2.part:Zone.Identifier
+[3.552s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7__2.stl
+[3.552s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8.part
+[3.553s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__3.stl:Zone.Identifier
+[3.553s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10.stl:Zone.Identifier
+[3.553s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__3.stl
+[3.554s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__4.part:Zone.Identifier
+[3.554s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8__2.stl:Zone.Identifier
+[3.554s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__2.part
+[3.554s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_13.stl
+[3.555s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_20.stl:Zone.Identifier
+[3.555s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_19.part:Zone.Identifier
+[3.555s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_19.stl
+[3.556s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8__2.stl
+[3.556s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_17.part:Zone.Identifier
+[3.556s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_14.part
+[3.556s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6.stl:Zone.Identifier
+[3.556s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__3.stl
+[3.557s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__2.part
+[3.557s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__2.part:Zone.Identifier
+[3.557s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__2.part
+[3.557s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_14.stl:Zone.Identifier
+[3.557s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_16.stl:Zone.Identifier
+[3.557s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10__2.part
+[3.558s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__3.part:Zone.Identifier
+[3.558s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__3.stl
+[3.558s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_11.stl
+[3.559s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_14.part:Zone.Identifier
+[3.559s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__3.part
+[3.559s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_16.stl
+[3.559s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5.stl
+[3.559s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__3.part:Zone.Identifier
+[3.559s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__2.part
+[3.560s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__3.stl:Zone.Identifier
+[3.560s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6__2.stl:Zone.Identifier
+[3.560s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__3.part:Zone.Identifier
+[3.560s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5__2.part:Zone.Identifier
+[3.560s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_16.part
+[3.561s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_18.part:Zone.Identifier
+[3.561s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__4.stl:Zone.Identifier
+[3.561s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2.stl:Zone.Identifier
+[3.561s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7__2.stl:Zone.Identifier
+[3.561s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9__2.part
+[3.561s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5__2.stl:Zone.Identifier
+[3.561s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_15.stl
+[3.562s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7__2.part:Zone.Identifier
+[3.562s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4.stl:Zone.Identifier
+[3.562s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_18.stl:Zone.Identifier
+[3.562s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2.part
+[3.562s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_14.stl
+[3.563s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_20.part
+[3.564s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_11.part
+[3.564s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1.part:Zone.Identifier
+[3.564s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_12.part
+[3.564s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__2.stl
+[3.565s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4.part:Zone.Identifier
+[3.565s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__3.stl:Zone.Identifier
+[3.565s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8__2.part:Zone.Identifier
+[3.565s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10.part:Zone.Identifier
+[3.565s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__4.part
+[3.565s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_15.part
+[3.566s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__4.stl
+[3.566s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_16.part:Zone.Identifier
+[3.566s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2.stl
+[3.566s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__2.stl
+[3.567s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10__2.stl:Zone.Identifier
+[3.567s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_12.stl
+[3.568s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_17.stl
+[3.568s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9__2.stl
+[3.568s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5.stl:Zone.Identifier
+[3.568s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_18.part
+[3.568s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__2.stl
+[3.569s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__3.part
+[3.569s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3.stl
+[3.569s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/foot.stl
+[3.570s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/thigh_r.stl
+[3.571s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/base.stl
+[3.573s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/thigh.stl
+[3.574s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/log
+[3.574s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/log/latest
+[3.574s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/calf_r.stl
+[3.575s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/base.step
+[3.577s] -- Installing: /home/aashini/ABN/install/robot/share/robot/mesh/calf.stl
+[3.577s] -- Installing: /home/aashini/ABN/install/robot/share/robot/dae
+[3.577s] -- Installing: /home/aashini/ABN/install/robot/share/robot/dae/calf.dae
+[3.579s] -- Installing: /home/aashini/ABN/install/robot/share/robot/dae/calf_mirror.dae
+[3.582s] -- Installing: /home/aashini/ABN/install/robot/share/robot/dae/base.dae
+[3.609s] -- Installing: /home/aashini/ABN/install/robot/share/robot/dae/foot.dae
+[3.613s] -- Installing: /home/aashini/ABN/install/robot/share/robot/dae/hip.dae
+[3.629s] -- Installing: /home/aashini/ABN/install/robot/share/robot/dae/thigh_mirror.dae
+[3.638s] -- Installing: /home/aashini/ABN/install/robot/share/robot/dae/thigh.dae
+[3.648s] -- Installing: /home/aashini/ABN/install/robot/share/ament_index/resource_index/package_run_dependencies/robot
+[3.649s] -- Installing: /home/aashini/ABN/install/robot/share/ament_index/resource_index/parent_prefix_path/robot
+[3.649s] -- Installing: /home/aashini/ABN/install/robot/share/robot/environment/ament_prefix_path.sh
+[3.649s] -- Installing: /home/aashini/ABN/install/robot/share/robot/environment/ament_prefix_path.dsv
+[3.649s] -- Installing: /home/aashini/ABN/install/robot/share/robot/environment/path.sh
+[3.649s] -- Installing: /home/aashini/ABN/install/robot/share/robot/environment/path.dsv
+[3.649s] -- Installing: /home/aashini/ABN/install/robot/share/robot/local_setup.bash
+[3.649s] -- Installing: /home/aashini/ABN/install/robot/share/robot/local_setup.sh
+[3.650s] -- Installing: /home/aashini/ABN/install/robot/share/robot/local_setup.zsh
+[3.650s] -- Installing: /home/aashini/ABN/install/robot/share/robot/local_setup.dsv
+[3.650s] -- Installing: /home/aashini/ABN/install/robot/share/robot/package.dsv
+[3.650s] -- Installing: /home/aashini/ABN/install/robot/share/ament_index/resource_index/packages/robot
+[3.650s] -- Installing: /home/aashini/ABN/install/robot/share/robot/cmake/robotConfig.cmake
+[3.650s] -- Installing: /home/aashini/ABN/install/robot/share/robot/cmake/robotConfig-version.cmake
+[3.650s] -- Installing: /home/aashini/ABN/install/robot/share/robot/package.xml
+[3.654s] Invoked command in '/home/aashini/ABN/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/aashini/ABN/build/robot

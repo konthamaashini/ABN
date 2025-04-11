@@ -1,0 +1,254 @@
+[0.000000] (-) TimerEvent: {}
+[0.000812] (my-test-package) JobQueued: {'identifier': 'my-test-package', 'dependencies': OrderedDict()}
+[0.000839] (robot) JobQueued: {'identifier': 'robot', 'dependencies': OrderedDict()}
+[0.000871] (my-test-package) JobStarted: {'identifier': 'my-test-package'}
+[0.010438] (robot) JobStarted: {'identifier': 'robot'}
+[0.098857] (-) TimerEvent: {}
+[0.171247] (robot) JobProgress: {'identifier': 'robot', 'progress': 'cmake'}
+[0.173159] (robot) JobProgress: {'identifier': 'robot', 'progress': 'build'}
+[0.173362] (robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aashini/ABN/build/robot', '--', '-j16', '-l16'], 'cwd': '/home/aashini/ABN/build/robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aashini'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/aashini'), ('OLDPWD', '/home/aashini/ABN/src/robot/urdf'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aashini/ABN/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'aashini'), ('ONSHAPE_SECRET_KEY', 'ECuBFssnApER2P3ZEjRt2DPQwaeAj58RgKeuL2sCAxqjKYxl'), ('NAME', 'DESKTOP-GCGNIPN'), ('WSL_INTEROP', '/run/WSL/560_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/aashini/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.4.13.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/National Instruments/Shared/LabVIEW CLI:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Aashini/.cargo/bin:/mnt/c/Users/Aashini/Documents/ANACONDA:/mnt/c/Users/Aashini/Documents/ANACONDA/Library/mingw-w64/bin:/mnt/c/Users/Aashini/Documents/ANACONDA/Library/usr/bin:/mnt/c/Users/Aashini/Documents/ANACONDA/Library/bin:/mnt/c/Users/Aashini/Documents/ANACONDA/Scripts:/mnt/c/Users/Aashini/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/Aashini/AppData/Local/Programs/Python/Python311/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/Aashini/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Aashini/Desktop/ROBOTICS SOFTWARE/Microsoft VS Code/bin:/mnt/c/Users/Aashini/.dotnet/tools:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/aashini/ABN/install/robot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/aashini/ABN/build/robot'), ('ONSHAPE_ACCESS_KEY', 'xSzP2mSHygiCiLEA3TUhpu3s'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aashini/ABN/install/my-test-package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('ONSHAPE_API', 'https://cad.onshape.com'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/aashini/ABN/install/robot:/opt/ros/foxy'), ('WSLENV', '')]), 'shell': False}
+[0.199073] (-) TimerEvent: {}
+[0.211026] (robot) CommandEnded: {'returncode': 0}
+[0.211825] (robot) JobProgress: {'identifier': 'robot', 'progress': 'install'}
+[0.219757] (robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/aashini/ABN/build/robot'], 'cwd': '/home/aashini/ABN/build/robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aashini'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/aashini'), ('OLDPWD', '/home/aashini/ABN/src/robot/urdf'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aashini/ABN/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'aashini'), ('ONSHAPE_SECRET_KEY', 'ECuBFssnApER2P3ZEjRt2DPQwaeAj58RgKeuL2sCAxqjKYxl'), ('NAME', 'DESKTOP-GCGNIPN'), ('WSL_INTEROP', '/run/WSL/560_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/aashini/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.4.13.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/National Instruments/Shared/LabVIEW CLI:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Aashini/.cargo/bin:/mnt/c/Users/Aashini/Documents/ANACONDA:/mnt/c/Users/Aashini/Documents/ANACONDA/Library/mingw-w64/bin:/mnt/c/Users/Aashini/Documents/ANACONDA/Library/usr/bin:/mnt/c/Users/Aashini/Documents/ANACONDA/Library/bin:/mnt/c/Users/Aashini/Documents/ANACONDA/Scripts:/mnt/c/Users/Aashini/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/Aashini/AppData/Local/Programs/Python/Python311/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/Aashini/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Aashini/Desktop/ROBOTICS SOFTWARE/Microsoft VS Code/bin:/mnt/c/Users/Aashini/.dotnet/tools:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/aashini/ABN/install/robot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/aashini/ABN/build/robot'), ('ONSHAPE_ACCESS_KEY', 'xSzP2mSHygiCiLEA3TUhpu3s'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aashini/ABN/install/my-test-package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('ONSHAPE_API', 'https://cad.onshape.com'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/aashini/ABN/install/robot:/opt/ros/foxy'), ('WSLENV', '')]), 'shell': False}
+[0.227797] (robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.227988] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch\n'}
+[0.228066] (robot) StdoutLine: {'line': b'-- Installing: /home/aashini/ABN/install/robot/share/robot/launch/display.launch.py\n'}
+[0.228342] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/install\n'}
+[0.228505] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/install/local_setup.bash\n'}
+[0.228583] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/install/local_setup.zsh\n'}
+[0.228845] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/install/setup.sh\n'}
+[0.229002] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/install/setup.zsh\n'}
+[0.229055] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/install/COLCON_IGNORE\n'}
+[0.229174] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/install/setup.ps1\n'}
+[0.229270] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/install/local_setup.sh\n'}
+[0.229635] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/install/_local_setup_util_ps1.py\n'}
+[0.230233] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/install/_local_setup_util_sh.py\n'}
+[0.230379] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/install/local_setup.ps1\n'}
+[0.230517] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/install/.colcon_install_layout\n'}
+[0.230612] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/install/setup.bash\n'}
+[0.230996] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/gazebo_spawn.launch.py\n'}
+[0.231121] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/gazebo_launch.py\n'}
+[0.231301] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/build\n'}
+[0.231444] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/build/COLCON_IGNORE\n'}
+[0.231508] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/build/.built_by\n'}
+[0.232043] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/log\n'}
+[0.232324] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/log/COLCON_IGNORE\n'}
+[0.232488] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/log/latest_build\n'}
+[0.232778] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/log/build_2025-04-09_22-18-20\n'}
+[0.232893] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/log/build_2025-04-09_22-18-20/logger_all.log\n'}
+[0.233343] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/log/build_2025-04-09_22-18-20/events.log\n'}
+[0.233466] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/log/latest\n'}
+[0.233568] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/launch/robot_visualization.py\n'}
+[0.233679] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/urdf\n'}
+[0.233789] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/urdf/robot.xacro\n'}
+[0.233934] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/urdf/base_robot.xacro\n'}
+[0.234051] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/urdf/abn_robot.urdf.xacro\n'}
+[0.234145] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/urdf/robot.sdf\n'}
+[0.234358] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/urdf/robot.urdf\n'}
+[0.234448] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh\n'}
+[0.234653] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/hip.stl\n'}
+[0.234792] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets\n'}
+[0.234832] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_19.part\n'}
+[0.234873] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6__2.part:Zone.Identifier\n'}
+[0.234919] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_15.stl:Zone.Identifier\n'}
+[0.234954] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8.stl\n'}
+[0.234990] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__4.part\n'}
+[0.235028] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3.part\n'}
+[0.235072] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__4.stl:Zone.Identifier\n'}
+[0.235107] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__3.stl\n'}
+[0.235141] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6.part:Zone.Identifier\n'}
+[0.235176] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__2.stl:Zone.Identifier\n'}
+[0.235210] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_12.part:Zone.Identifier\n'}
+[0.235250] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6.part\n'}
+[0.235285] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__4.part:Zone.Identifier\n'}
+[0.235320] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10__2.part:Zone.Identifier\n'}
+[0.235418] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__3.stl:Zone.Identifier\n'}
+[0.235499] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__4.part\n'}
+[0.235723] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__2.stl\n'}
+[0.236139] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__3.part\n'}
+[0.236277] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__2.part:Zone.Identifier\n'}
+[0.237181] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__4.stl\n'}
+[0.237405] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1.stl\n'}
+[0.237566] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5.part:Zone.Identifier\n'}
+[0.237690] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_17.stl:Zone.Identifier\n'}
+[0.237824] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8.part:Zone.Identifier\n'}
+[0.238085] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_15.part:Zone.Identifier\n'}
+[0.238324] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6__2.part\n'}
+[0.238438] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_11.part:Zone.Identifier\n'}
+[0.238491] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_20.part:Zone.Identifier\n'}
+[0.241864] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9__2.part:Zone.Identifier\n'}
+[0.242036] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7.stl:Zone.Identifier\n'}
+[0.242128] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7.part\n'}
+[0.242229] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__4.stl\n'}
+[0.242914] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_11.stl:Zone.Identifier\n'}
+[0.243137] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10.part\n'}
+[0.243317] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_19.stl:Zone.Identifier\n'}
+[0.243502] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__2.stl:Zone.Identifier\n'}
+[0.243618] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9.part\n'}
+[0.243783] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5.part\n'}
+[0.243856] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10__2.stl\n'}
+[0.244266] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5__2.stl\n'}
+[0.244448] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9.stl:Zone.Identifier\n'}
+[0.244643] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8.stl:Zone.Identifier\n'}
+[0.244712] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7.stl\n'}
+[0.244821] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3.part:Zone.Identifier\n'}
+[0.245740] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__2.stl:Zone.Identifier\n'}
+[0.245945] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5__2.part\n'}
+[0.246120] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_13.part\n'}
+[0.246199] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__4.stl:Zone.Identifier\n'}
+[0.246310] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__4.part:Zone.Identifier\n'}
+[0.246427] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8__2.part\n'}
+[0.246562] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__2.stl:Zone.Identifier\n'}
+[0.246616] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3.stl:Zone.Identifier\n'}
+[0.246733] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2.part:Zone.Identifier\n'}
+[0.246799] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_13.part:Zone.Identifier\n'}
+[0.246911] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_17.part\n'}
+[0.247077] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_12.stl:Zone.Identifier\n'}
+[0.247210] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6.stl\n'}
+[0.247272] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9.part:Zone.Identifier\n'}
+[0.247442] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4.stl\n'}
+[0.247564] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10.stl\n'}
+[0.247619] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_20.stl\n'}
+[0.247731] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__3.part\n'}
+[0.247791] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6__2.stl\n'}
+[0.247886] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7.part:Zone.Identifier\n'}
+[0.248013] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9.stl\n'}
+[0.248090] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9__2.stl:Zone.Identifier\n'}
+[0.248228] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__3.part:Zone.Identifier\n'}
+[0.248382] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4.part\n'}
+[0.248523] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1.part\n'}
+[0.248602] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_18.stl\n'}
+[0.248732] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_13.stl:Zone.Identifier\n'}
+[0.248872] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7__2.part\n'}
+[0.248976] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__2.part:Zone.Identifier\n'}
+[0.249101] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1.stl:Zone.Identifier\n'}
+[0.249208] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__2.part:Zone.Identifier\n'}
+[0.249341] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7__2.stl\n'}
+[0.249469] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8.part\n'}
+[0.249518] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__3.stl:Zone.Identifier\n'}
+[0.249985] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10.stl:Zone.Identifier\n'}
+[0.250621] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__3.stl\n'}
+[0.250760] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__4.part:Zone.Identifier\n'}
+[0.250865] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8__2.stl:Zone.Identifier\n'}
+[0.250973] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__2.part\n'}
+[0.251038] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_13.stl\n'}
+[0.251140] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_20.stl:Zone.Identifier\n'}
+[0.251269] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_19.part:Zone.Identifier\n'}
+[0.251443] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_19.stl\n'}
+[0.251608] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8__2.stl\n'}
+[0.251678] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_17.part:Zone.Identifier\n'}
+[0.251781] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_14.part\n'}
+[0.251879] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6.stl:Zone.Identifier\n'}
+[0.251994] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__3.stl\n'}
+[0.252057] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__2.part\n'}
+[0.252172] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__2.part:Zone.Identifier\n'}
+[0.252226] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__2.part\n'}
+[0.252315] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_14.stl:Zone.Identifier\n'}
+[0.252466] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_16.stl:Zone.Identifier\n'}
+[0.252809] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10__2.part\n'}
+[0.252981] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__3.part:Zone.Identifier\n'}
+[0.253108] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__3.stl\n'}
+[0.253304] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_11.stl\n'}
+[0.253806] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_14.part:Zone.Identifier\n'}
+[0.254749] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__3.part\n'}
+[0.254808] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_16.stl\n'}
+[0.254847] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5.stl\n'}
+[0.254919] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__3.part:Zone.Identifier\n'}
+[0.256002] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__2.part\n'}
+[0.256142] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__3.stl:Zone.Identifier\n'}
+[0.256187] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_6__2.stl:Zone.Identifier\n'}
+[0.256262] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__3.part:Zone.Identifier\n'}
+[0.256301] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5__2.part:Zone.Identifier\n'}
+[0.256374] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_16.part\n'}
+[0.256712] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_18.part:Zone.Identifier\n'}
+[0.256826] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__4.stl:Zone.Identifier\n'}
+[0.256922] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2.stl:Zone.Identifier\n'}
+[0.256977] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7__2.stl:Zone.Identifier\n'}
+[0.257075] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9__2.part\n'}
+[0.257123] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5__2.stl:Zone.Identifier\n'}
+[0.257194] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_15.stl\n'}
+[0.257230] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_7__2.part:Zone.Identifier\n'}
+[0.257320] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4.stl:Zone.Identifier\n'}
+[0.257358] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_18.stl:Zone.Identifier\n'}
+[0.257437] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2.part\n'}
+[0.257480] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_14.stl\n'}
+[0.258220] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_20.part\n'}
+[0.258311] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_11.part\n'}
+[0.258396] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1.part:Zone.Identifier\n'}
+[0.258438] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_12.part\n'}
+[0.258534] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2__2.stl\n'}
+[0.258607] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4.part:Zone.Identifier\n'}
+[0.258847] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__3.stl:Zone.Identifier\n'}
+[0.258944] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_8__2.part:Zone.Identifier\n'}
+[0.259281] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10.part:Zone.Identifier\n'}
+[0.259405] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__4.part\n'}
+[0.259501] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_15.part\n'}
+[0.259544] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3__4.stl\n'}
+[0.259773] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_16.part:Zone.Identifier\n'}
+[0.259857] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_2.stl\n'}
+[0.259937] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__2.stl\n'}
+[0.259979] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_10__2.stl:Zone.Identifier\n'}
+[0.260077] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_12.stl\n'}
+[0.260137] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_17.stl\n'}
+[0.260222] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_9__2.stl\n'}
+[0.260261] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_5.stl:Zone.Identifier\n'}
+[0.260372] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_18.part\n'}
+[0.260414] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_4__2.stl\n'}
+[0.260451] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_1__3.part\n'}
+[0.260542] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/assets/part_3.stl\n'}
+[0.260601] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/foot.stl\n'}
+[0.260675] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/thigh_r.stl\n'}
+[0.260764] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/base.stl\n'}
+[0.260807] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/thigh.stl\n'}
+[0.260895] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/log\n'}
+[0.261001] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/log/latest\n'}
+[0.261126] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/calf_r.stl\n'}
+[0.261242] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/base.step\n'}
+[0.261879] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/mesh/calf.stl\n'}
+[0.261998] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/dae\n'}
+[0.262207] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/dae/calf.dae\n'}
+[0.262317] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/dae/calf_mirror.dae\n'}
+[0.262426] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/dae/base.dae\n'}
+[0.262532] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/dae/foot.dae\n'}
+[0.262645] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/dae/hip.dae\n'}
+[0.262754] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/dae/thigh_mirror.dae\n'}
+[0.262865] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/dae/thigh.dae\n'}
+[0.262975] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/ament_index/resource_index/package_run_dependencies/robot\n'}
+[0.263126] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/ament_index/resource_index/parent_prefix_path/robot\n'}
+[0.263245] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/environment/ament_prefix_path.sh\n'}
+[0.263352] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/environment/ament_prefix_path.dsv\n'}
+[0.263460] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/environment/path.sh\n'}
+[0.263568] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/environment/path.dsv\n'}
+[0.263675] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/local_setup.bash\n'}
+[0.263783] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/local_setup.sh\n'}
+[0.263894] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/local_setup.zsh\n'}
+[0.264002] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/local_setup.dsv\n'}
+[0.264168] (robot) StdoutLine: {'line': b'-- Installing: /home/aashini/ABN/install/robot/share/robot/package.dsv\n'}
+[0.264293] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/ament_index/resource_index/packages/robot\n'}
+[0.264474] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/cmake/robotConfig.cmake\n'}
+[0.264584] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/cmake/robotConfig-version.cmake\n'}
+[0.264694] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/aashini/ABN/install/robot/share/robot/package.xml\n'}
+[0.264803] (robot) CommandEnded: {'returncode': 0}
+[0.276134] (robot) JobEnded: {'identifier': 'robot', 'rc': 0}
+[0.299260] (-) TimerEvent: {}
+[0.399721] (-) TimerEvent: {}
+[0.451073] (my-test-package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../../../../../../build/my-test-package', 'build', '--build-base', '/home/aashini/ABN/build/my-test-package/build', 'install', '--record', '/home/aashini/ABN/build/my-test-package/install.log', '--single-version-externally-managed'], 'cwd': '/home/aashini/ABN/ros2_py38/lib/python3.8/site-packages/pkg_resources/tests/data/my-test-package-source', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'aashini', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/aashini', 'OLDPWD': '/home/aashini/ABN/src/robot/urdf', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/aashini/ABN/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'aashini', 'ONSHAPE_SECRET_KEY': 'ECuBFssnApER2P3ZEjRt2DPQwaeAj58RgKeuL2sCAxqjKYxl', 'NAME': 'DESKTOP-GCGNIPN', 'WSL_INTEROP': '/run/WSL/560_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/aashini/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.4.13.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/National Instruments/Shared/LabVIEW CLI:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Aashini/.cargo/bin:/mnt/c/Users/Aashini/Documents/ANACONDA:/mnt/c/Users/Aashini/Documents/ANACONDA/Library/mingw-w64/bin:/mnt/c/Users/Aashini/Documents/ANACONDA/Library/usr/bin:/mnt/c/Users/Aashini/Documents/ANACONDA/Library/bin:/mnt/c/Users/Aashini/Documents/ANACONDA/Scripts:/mnt/c/Users/Aashini/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/Aashini/AppData/Local/Programs/Python/Python311/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/Aashini/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Aashini/Desktop/ROBOTICS SOFTWARE/Microsoft VS Code/bin:/mnt/c/Users/Aashini/.dotnet/tools:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/aashini/ABN/install/robot:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/aashini/ABN/build/my-test-package', 'ONSHAPE_ACCESS_KEY': 'xSzP2mSHygiCiLEA3TUhpu3s', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/aashini/ABN/build/my-test-package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aashini/ABN/install/my-test-package/lib/python3.8/site-packages:/home/aashini/ABN/install/my-test-package/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'ONSHAPE_API': 'https://cad.onshape.com', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/aashini/ABN/install/robot', 'WSLENV': ''}, 'shell': False}
+[0.499940] (-) TimerEvent: {}
+[0.598886] (my-test-package) StdoutLine: {'line': b'running egg_info\n'}
+[0.599411] (my-test-package) StdoutLine: {'line': b'writing ../../../../../../../../build/my-test-package/my_test_package.egg-info/PKG-INFO\n'}
+[0.599969] (-) TimerEvent: {}
+[0.600525] (my-test-package) StdoutLine: {'line': b'writing dependency_links to ../../../../../../../../build/my-test-package/my_test_package.egg-info/dependency_links.txt\n'}
+[0.600671] (my-test-package) StdoutLine: {'line': b'writing top-level names to ../../../../../../../../build/my-test-package/my_test_package.egg-info/top_level.txt\n'}
+[0.602136] (my-test-package) StdoutLine: {'line': b"reading manifest file '../../../../../../../../build/my-test-package/my_test_package.egg-info/SOURCES.txt'\n"}
+[0.602992] (my-test-package) StdoutLine: {'line': b"writing manifest file '../../../../../../../../build/my-test-package/my_test_package.egg-info/SOURCES.txt'\n"}
+[0.603112] (my-test-package) StdoutLine: {'line': b'running build\n'}
+[0.603167] (my-test-package) StdoutLine: {'line': b'running install\n'}
+[0.603822] (my-test-package) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.605878] (my-test-package) StdoutLine: {'line': b"removing '/home/aashini/ABN/install/my-test-package/lib/python3.8/site-packages/my_test_package-1.0-py3.8.egg-info' (and everything under it)\n"}
+[0.606217] (my-test-package) StdoutLine: {'line': b'Copying ../../../../../../../../build/my-test-package/my_test_package.egg-info to /home/aashini/ABN/install/my-test-package/lib/python3.8/site-packages/my_test_package-1.0-py3.8.egg-info\n'}
+[0.606869] (my-test-package) StdoutLine: {'line': b'running install_scripts\n'}
+[0.619941] (my-test-package) StdoutLine: {'line': b"writing list of installed files to '/home/aashini/ABN/build/my-test-package/install.log'\n"}
+[0.633456] (my-test-package) CommandEnded: {'returncode': 0}
+[0.639484] (my-test-package) JobEnded: {'identifier': 'my-test-package', 'rc': 0}
+[0.641283] (-) EventReactorShutdown: {}
