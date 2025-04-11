@@ -1,204 +1,384 @@
-<?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro" name="humanoid_robot">
-
-  <xacro:property name="mesh_dir" value="package://robot/meshes"/>
-
-  <!-- Base -->
-  <link name="base_link">
-    <visual>
-      <geometry>
-         <box size="0.2 0.2 0.2"/>
-      </geometry>
-
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <material name="base_color">
-        <color rgba="0.7 0.7 0.7 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="${mesh_dir}/base.stl" scale="1 1 1"/>
-      </geometry>
-    </collision>
-    <inertial>
-      <mass value="1.0"/>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
-               iyy="0.01" iyz="0.0"
-               izz="0.01"/>
-    </inertial>
-  </link>
-
-  <!-- Hip -->
-  <link name="hip_link">
-    <visual>
-      <geometry>
-        <mesh filename="${mesh_dir}/hip.stl" scale="1 1 1"/>
-      </geometry>
-      <material name="hip_color">
-        <color rgba="0.5 0.8 0.5 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="${mesh_dir}/hip.stl" scale="1 1 1"/>
-      </geometry>
-    </collision>
-    <inertial>
-      <mass value="1.0"/>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
-               iyy="0.01" iyz="0.0"
-               izz="0.01"/>
-    </inertial>
-  </link>
-  <joint name="base_to_hip" type="fixed">
-    <parent link="base_link"/>
-    <child link="hip_link"/>
-    <origin xyz="0 0 0.1" rpy="0 0 0"/>
-  </joint>
-
-  <!-- Left Leg -->
-  <link name="thigh_link">
-    <visual>
-      <geometry>
-        <mesh filename="${mesh_dir}/thigh.stl" scale="1 1 1"/>
-      </geometry>
-      <material name="thigh_color">
-        <color rgba="0.8 0.5 0.5 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="${mesh_dir}/thigh.stl" scale="1 1 1"/>
-      </geometry>
-    </collision>
-    <inertial>
-      <mass value="1.0"/>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
-               iyy="0.01" iyz="0.0"
-               izz="0.01"/>
-    </inertial>
-  </link>
-  <joint name="hip_to_thigh" type="fixed">
-    <parent link="hip_link"/>
-    <child link="thigh_link"/>
-    <origin xyz="0.1 0 0" rpy="0 0 0"/>
-  </joint>
-
-  <link name="calf_link">
-    <visual>
-      <geometry>
-        <mesh filename="${mesh_dir}/calf.stl" scale="1 1 1"/>
-      </geometry>
-      <material name="calf_color">
-        <color rgba="0.5 0.5 0.8 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="${mesh_dir}/calf.stl" scale="1 1 1"/>
-      </geometry>
-    </collision>
-    <inertial>
-      <mass value="1.0"/>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
-               iyy="0.01" iyz="0.0"
-               izz="0.01"/>
-    </inertial>
-  </link>
-  <joint name="thigh_to_calf" type="fixed">
-    <parent link="thigh_link"/>
-    <child link="calf_link"/>
-    <origin xyz="0 -0.2 0" rpy="0 0 0"/>
-  </joint>
-
-  <link name="foot_link">
-    <visual>
-      <geometry>
-        <mesh filename="${mesh_dir}/foot.stl" scale="1 1 1"/>
-      </geometry>
-      <material name="foot_color">
-        <color rgba="0.5 0.7 0.9 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="${mesh_dir}/foot.stl" scale="1 1 1"/>
-      </geometry>
-    </collision>
-    <inertial>
-      <mass value="1.0"/>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
-               iyy="0.01" iyz="0.0"
-               izz="0.01"/>
-    </inertial>
-  </link>
-  <joint name="calf_to_foot" type="fixed">
-    <parent link="calf_link"/>
-    <child link="foot_link"/>
-    <origin xyz="0 -0.15 0" rpy="0 0 0"/>
-  </joint>
-
-  <!-- Right Leg -->
-  <link name="thigh_r_link">
-    <visual>
-      <geometry>
-        <mesh filename="${mesh_dir}/thigh_r.stl" scale="1 1 1"/>
-      </geometry>
-      <material name="thigh_r_color">
-        <color rgba="0.8 0.8 0.4 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="${mesh_dir}/thigh_r.stl" scale="1 1 1"/>
-      </geometry>
-    </collision>
-    <inertial>
-      <mass value="1.0"/>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
-               iyy="0.01" iyz="0.0"
-               izz="0.01"/>
-    </inertial>
-  </link>
-  <joint name="hip_to_thigh_r" type="fixed">
-    <parent link="hip_link"/>
-    <child link="thigh_r_link"/>
-    <origin xyz="-0.1 0 0" rpy="0 0 0"/>
-  </joint>
-
-  <link name="calf_r_link">
-    <visual>
-      <geometry>
-        <mesh filename="${mesh_dir}/calf_r.stl" scale="1 1 1"/>
-      </geometry>
-      <material name="calf_r_color">
-        <color rgba="0.3 0.3 0.9 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="${mesh_dir}/calf_r.stl" scale="1 1 1"/>
-      </geometry>
-    </collision>
-    <inertial>
-      <mass value="1.0"/>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
-               iyy="0.01" iyz="0.0"
-               izz="0.01"/>
-    </inertial>
-  </link>
-  <joint name="thigh_r_to_calf_r" type="fixed">
-    <parent link="thigh_r_link"/>
-    <child link="calf_r_link"/>
-    <origin xyz="0 -0.2 0" rpy="0 0 0"/>
-  </joint>
-
+<?xml version="1.0" ?>
+<robot name="robot">
+    <link name="link_base">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_8.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_8_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_8.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_14.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_14_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_14.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_20.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_20_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_20.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_6.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_6_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_6.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_18.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_18_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_18.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_9.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_9_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_9.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_16.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_16_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_16.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_5.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_5_material">
+        <color rgba="0.980392 0.713725 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_5.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_2.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_2_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_2.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_4.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_4_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_4.stl"  scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_11.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_11_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_11.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_10.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_10_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_10.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_15.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_15_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_15.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_3.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_3_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_3.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_7.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_7_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_7.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_17.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_17_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_17.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_1.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_1_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_1.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_13.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_13_material">
+        <color rgba="0.980392 0.713725 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_13.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_19.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_19_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_19.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_12.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_12_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_12.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+  </link>
+    <link name="link_hip_l">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_2__2.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_2_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_2__2.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_3__2.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_3_2_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_3__2.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_4__2.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_4_2_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_4__2.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+        <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_1__2.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="part_1_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="$(find robot)/mesh/assets/part_1__2.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+  </link>
+    <joint name="joint12" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="link_base"/>
+    <child link="link_hip_l"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
 </robot>
-
